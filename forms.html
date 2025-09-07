@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form Page</title>
+    <link rel="shortcut icon" href="/images/favicon3.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    
+    <header>
+         <nav>
+            <a href="index.html">Homepage</a> |
+            <a href="table.html">Table of Books</a> |
+            <a href="media.html">Media</a> |
+            <a href="forms.html">Form</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+      <h1>If you want to be updated in the Future...</h1>  
+    </header>
+    <main>
+        <h2>Fill Out this Form!</h2>
+        <form action="/submit" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="adfed@gmail.com">
+            <br>
+            <label for="subscribe">Subscribe to newsletter</label>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <br>
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+            </select>
+            <br>
+            <label for="birthdate">Birth Date</label>
+            <input type="date" id="birthdate" name="birthdate">
+            <br>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+            <br>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Lani Productions <a href="https://github.com/" target="_blank">visit GitHub</a></p>
+    </footer> 
 </body>
 </html>
