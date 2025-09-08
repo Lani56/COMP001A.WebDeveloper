@@ -72,3 +72,15 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
+html {
+    scroll-behavior: smooth;
+}
+main {
+    height: 1000px;
+}
+.honorable {
+    font-size: 0.7em;
+    color: #666;
+    font-style: italic;
+    margin-top: -10px;
+}
